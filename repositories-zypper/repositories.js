@@ -43,7 +43,7 @@ function zypper_list_success(data) {
             zypper_refresh_repo(repo.getAttribute("autorefresh") == "0", repo.getAttribute("alias"));
         });
 
-        let name = document.createElement("th");
+        let name = document.createElement("td");
         name.append(document.createTextNode(repo.getAttribute("name")));
 
         let url = document.createElement("td");

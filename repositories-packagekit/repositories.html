@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Software Repositories</title>
+    <meta charset="utf-8">
+    <!-- This CSS link should not be needed, but the Cockpit in openSUSE TW
+         looks a bit broken, the ../base1/cockpit.css links to
+         ../src/base1/patternfly.css which is wrong... -->
+    <link href="../base1/patternfly.css" type="text/css" rel="stylesheet">
+
+    <link href="../base1/cockpit.css" type="text/css" rel="stylesheet">
+    <script src="../base1/cockpit.js"></script>
+</head>
+
+<body class="pf-m-redhat-font">
+    <div id="app">
+        <div class="container-fluid">
+            <div class="pk-repositories">
+                <h2>Software Repositories</h2>
+                <table class="listing-ct available">
+                    <thead>
+                        <tr>
+                            <!-- Unfortunately PackageKit does not provide more
+                                 details about the repositorie than these :-( -->
+                            <th scope="col">Enabled</th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody id="repo-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="repositories.js"></script>
+</body>
+
+</html>

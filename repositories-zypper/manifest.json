@@ -3,7 +3,7 @@
 
     "tools": {
         "Repositories": {
-            "label": "Repositories",
+            "label": "Repositories (Zypper)",
             "path": "repositories.html"
         }
     }
