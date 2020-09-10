@@ -48,6 +48,7 @@ function pk_list_repos() {
     // wait until the proxy is loaded
     // https://cockpit-project.org/guide/latest/cockpit-dbus.html
     // then call CreateTransaction()
+    // https://www.freedesktop.org/software/PackageKit/gtk-doc/PackageKit.html#PackageKit.CreateTransaction
     pk_proxy.wait().done(function () { pk_proxy.CreateTransaction().then(transaction_ready); });
 }
 
